@@ -59,6 +59,6 @@ cv2.destroyAllWindows()
 # This means the image contains a mixture of dark, medium, and bright areas. Since the pixel intensities cover a wide range from near 0 to 255, 
 # the image has relatively high contrast. The large peaks around 130–160 and near 255 show that many pixels are concentrated in those brightness levels.
 
-# 5. image5 - This histogram is strongly concentrated toward the right side, especially around intensity values of 200–255. 
+# 5. image5.jpg - This histogram is strongly concentrated toward the right side, especially around intensity values of 200–255. 
 # This means the image contains a large number of bright pixels, with very few dark pixels. 
 # The large peaks close to 250 indicate that many pixels are extremely bright or nearly white. Overall, this suggests that the image is very bright
