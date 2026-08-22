@@ -2,7 +2,7 @@ from __future__ import print_function
 import cv2 as cv
 import argparse
 parser = argparse.ArgumentParser(description='Code for Histogram Equalization tutorial.')
-parser.add_argument('--input', help='Path to input image.', default='lena.jpg')
+parser.add_argument('--input', help='Path to input image.', default='dog.jpg')
 args = parser.parse_args()
 src = cv.imread(cv.samples.findFile(args.input))
 if src is None:

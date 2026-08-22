@@ -12,8 +12,8 @@ input_alpha = float(raw_input().strip())
 if 0 <= alpha <= 1:
     alpha = input_alpha
 # [load]
-src1 = cv.imread(cv.samples.findFile('LinuxLogo.jpg'))
-src2 = cv.imread(cv.samples.findFile('WindowsLogo.jpg'))
+src1 = cv.imread(cv.samples.findFile('mountain.jpg'))
+src2 = cv.imread(cv.samples.findFile('dog.jpg'))
 # [load]
 if src1 is None:
     print("Error loading src1")
@@ -21,12 +21,14 @@ if src1 is None:
 elif src2 is None:
     print("Error loading src2")
     exit(-1)
+
+src2 = cv.resize(src2, (src1.shape[1], src1.shape[0]))
 # [blend_images]
 beta = (1.0 - alpha)
 dst = cv.addWeighted(src1, alpha, src2, beta, 0.0)
 # [blend_images]
 # [display]
-#cv.imwrite("blendimage.jpg", dst)
+cv.imwrite("blendimage.jpg", dst)
 cv.imshow('dst', dst)
 cv.waitKey(0)
 # [display]

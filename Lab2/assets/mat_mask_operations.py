@@ -5,12 +5,14 @@ import numpy as np
 import cv2 as cv
 def is_grayscale(my_image):
     return len(my_image.shape) < 3
+
 def saturated(sum_value):
     if sum_value > 255:
         sum_value = 255
     if sum_value < 0:
         sum_value = 0
     return sum_value
+
 def sharpen(my_image):
     if is_grayscale(my_image):
         height, width = my_image.shape
