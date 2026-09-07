@@ -199,3 +199,17 @@ plt.axis("off")
 
 plt.tight_layout()
 plt.show()
+
+# cv2.imshow("1. Original Image", image)
+
+# cv2.imshow("2. Grayscale Image", gray)
+
+# cv2.imshow("3. Gaussian Blurred Image", blurred)
+
+# cv2.imshow("4. Sobel X Gradient", cv2.convertScaleAbs(sobel_x))
+
+# cv2.imshow("5. Sobel Y Gradient", cv2.convertScaleAbs(sobel_y))
+
+# cv2.imshow("6. Gradient Magnitude", magnitude)
+
+# cv2.imshow("7. Canny Edge Detection", edges)
